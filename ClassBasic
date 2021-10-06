@@ -1,0 +1,15 @@
+# Defining a basic class in Python
+class CountFromBy():
+  """Class consists of methods and attributes -> Methods define the behaviour and attributes define the state"""
+	def __init__(self, v: int=0, i: int=1) -> None:
+    """Defining the initialization function for class objects"""
+		self.val = v
+		self.incr = i
+		
+	def increase(self) -> None:
+    """Defining the increment function"""
+		self.val += self.incr
+	
+	def __repr__(self) -> str:
+    """Defining the string representation for the output which overrides the built-in"""
+		return str(self.val)
